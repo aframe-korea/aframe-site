@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "aframe": "github:aframevr/aframe#master",
+    "aframe": "github:aframe-korea/aframe#master",
     "chalk": "^1.1.3",
     "cheerio": "^0.20.0",
     "es6-promise": "^3.2.1",
     "glob": "^7.0.6",
-    "hexo": "3.2.2",
+    "hexo": "6.3.0",
     "hexo-autoprefixer": "1.0.0",
     "hexo-browsersync": "0.2.0",
     "hexo-deployer-git": "0.1.0",
@@ -38,20 +38,20 @@
     "yaml-cat": "^0.3.2"
   },
   "hexo": {
-    "version": "3.2.2"
+    "version": "6.3.0"
   },
   "scripts": {
     "awoa": "node node_scripts/awoa.js",
-    "bumpdocs": "npm cache clean aframevr/aframe#docs-v1.3.0 && rm -rf .multidep/aframe-1.3.0 && npm install aframevr/aframe#master && npm run installdocs",
+    "bumpdocs": "npm cache clean aframevr/aframe#docs-v1.3.0 && rm -rf .multidep/aframe-1.3.0 && npm install aframevr/aframe#master && yarn installdocs",
     "copydocs": "node node_scripts/copyDocs.js multidep.json",
     "clean": "hexo clean",
-    "dev": "npm run clean && npm run generate:config && npm run server",
-    "generate": "npm run generate:config && hexo generate",
+    "dev": "yarn clean && yarn generate:config && yarn server",
+    "generate": "yarn generate:config && hexo generate",
     "generateawoa": "node node_scripts/generateAWeekofAFrame.js",
     "generate:config": "yaml-cat _config.prod.yml _config.local.yml -n -m > _config.yml",
-    "installdocs": "multidep multidep.json && npm run copydocs",
+    "installdocs": "multidep multidep.json && yarn copydocs",
     "server": "hexo server",
-    "start": "npm run dev",
+    "start": "yarn dev",
     "test": "node script/checkLinks.js"
   }
 }
