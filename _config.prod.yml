@@ -117,7 +117,7 @@ browsersync:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:aframevr/aframevr.github.io.git
+  repository: git@github.com:aframe-korea/aframe-korea.github.io.git
 
 disqus_shortname:
 twitter:
@@ -132,9 +132,9 @@ github:
     repo: aframe
     url: https://github.com/aframevr/aframe/
   aframe_site:
-    username: aframevr
+    username: aframe-korea
     repo: aframe-site
-    url: https://github.com/aframevr/aframe-site/
+    url: https://github.com/aframe-korea/aframe-site/
   awesome_aframe:
     username: aframevr
     repo: awesome-aframe
