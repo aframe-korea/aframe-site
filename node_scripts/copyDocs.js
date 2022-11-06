@@ -20,7 +20,7 @@ fs.readFile(specPath, 'utf8', function (err, data) {
     if (version === '0.1.0') { continue; }
 
     // Get source and destinations for the copy.
-    let source = '.multidep/aframe-' + version + '/node_modules/aframe/docs';
+    let source = '.multidep/aframe-' + version + '/docs';
     let dest = 'src/docs/' + version;
     // Clear the destination in case files were moved or deleted.
     rmdir(dest, function (err, dirs, files) {

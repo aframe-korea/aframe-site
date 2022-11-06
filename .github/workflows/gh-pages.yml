@@ -21,6 +21,7 @@ jobs:
       - name: build
         run: |
           yarn installdocs:1.3.0
+          yarn copydocs
           yarn generate
           touch public/.nojekyll
 

@@ -1,7 +1,4 @@
 #! /bin/sh
 
 mkdir .multidep
-git clone https://github.com/aframe-korea/aframe.git$2 .multidep/aframe-$1
-cd ./.multidep/aframe-$1
-npm i
-cd ../..
+git clone -b docs-v$1 https://github.com/aframe-korea/aframe .multidep/aframe-$1

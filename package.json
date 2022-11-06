@@ -50,7 +50,7 @@
     "generateawoa": "node node_scripts/generateAWeekofAFrame.js",
     "generate:config": "yaml-cat _config.prod.yml _config.local.yml -n -m > _config.yml",
     "installdocs": "multidep multidep.json && yarn copydocs",
-    "installdocs:1.3.0": "sh clone.sh 1.3.0 \\#master && yarn copydocs && cp -r src/docs/master src/docs/1.3.0",
+    "installdocs:1.3.0": "sh clone.sh 1.3.0",
     "server": "hexo server",
     "start": "yarn dev",
     "test": "node script/checkLinks.js"
