@@ -18,7 +18,7 @@ theme_color: black
 
 # URL.
 ## If your site is put in a sub-directory, set URL as `http://yoursite.com/child` and root as `/child/`.
-url: https://aframe.io
+url: https://aframe-korea.io
 root: /
 permalink: blog/:title/
 tag_dir: tags
@@ -128,9 +128,9 @@ fb_app_id: 1535794316743373
 
 github:
   aframe:
-    username: aframevr
+    username: aframe-korea
     repo: aframe
-    url: https://github.com/aframevr/aframe/
+    url: https://github.com/aframe-korea/aframe/
   aframe_site:
     username: aframe-korea
     repo: aframe-site
