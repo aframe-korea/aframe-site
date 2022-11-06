@@ -18,11 +18,11 @@
       data-is-mobile="false"
       data-supports-vr="false"
       data-supports-touch="false"
-      data-site-base-url="http://localhost:4000"
+      data-site-base-url="https://aframe.io"
       data-site-root-path="/"
-      data-site-home-url="http://localhost:4000/"
-      data-lib-home-url="http://localhost:9000"
-      data-lib-examples-url="http://localhost:9000/examples"
+      data-site-home-url="https://aframe.io/"
+      data-lib-home-url="https://aframe.io/"
+      data-lib-examples-url="https://aframe.io/aframe/examples"
       data-title="{title} | A-Frame"
       data-is-spa="false"
       data-ga-id="UA-111391431-24"
@@ -32,11 +32,19 @@
     <title>A-Frame v0.7.0 - Windows Mixed Reality Headsets and glTF 2.0 – A-Frame</title>
     
 
+<script>
+  var host = window.location.protocol + '//' + window.location.hostname;
+  if (window.location.protocol === 'http:' &&
+      window.location.hostname === 'https://aframe.io') {
+    window.location.href = 'https:' + window.location.href.substring(6);
+  }
+</script>
+
 
     <meta charset="utf-8">
     <!-- Don't index old documentation pages. -->
     <meta name="robots"
-      content="none">
+      content="all">
     <meta name="description" content="We welcome Microsoft to the A-Frame family. 0.7.0 ships out of the box support for Microsoft Mixed Reality headsets and controllers on Microsoft Edge thanks to the work of Olga Milovanova, Lewis Weaver, Nell Waliczek and Samira Hirji. A-Frame 0.7.0 fully adopts glTF 2.0, unlockin">
     <meta name="keywords" content="webvr,webvr framework,webvr demos,webvr sites,vr javascript,vr framework">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -44,13 +52,13 @@
     <meta http-equiv="origin-trial" data-feature=" WebXR Device API (For Chrome M69+)" data-expires="2019-03-05" content="Ako5ueZ8LIub4MywyaWBtX6FQOVZBYPxDUBC09XfJRjVfQH1GXOaRO8v4/TQWyPdmw2qm8nJ/f9QfFwE+t20NwsAAABkeyJvcmlnaW4iOiJodHRwczovL2FmcmFtZS5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViWFJEZXZpY2VNNjkiLCJleHBpcnkiOjE1NTE4MzAzOTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
     <!-- Origin Trial Token, feature = WebVR (For Chrome M62+), origin = https://aframe.io, expires = 2018-08-09 -->
     <meta http-equiv="origin-trial" data-feature="WebVR (For Chrome M62+)" data-expires="2018-08-09" content="AlKeBeX7MGtuPmoZUks7FEWi6ke/EeYDPS1zhkb9bsdGr+r9gv+vYXGN7pUIz8+4XPxpWi7guenedSC1jM8B6AcAAABOeyJvcmlnaW4iOiJodHRwczovL2FmcmFtZS5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViVlIxLjFNNjIiLCJleHBpcnkiOjE1MzM4NDAyMzN9">
-    <link rel="canonical" href="http://localhost:4000">
+    <link rel="canonical" href="https://aframe.io">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600" rel="stylesheet">
     <meta property="fb:app_id" content="1535794316743373">
     <meta property="og:title" content="A-Frame v0.7.0 - Windows Mixed Reality Headsets and glTF 2.0 – A-Frame">
     <meta property="og:site_name" content="A-Frame">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://localhost:4000">
+    <meta property="og:url" content="https://aframe.io">
     <meta property="og:description" content="We welcome Microsoft to the A-Frame family. 0.7.0 ships out of the box support for Microsoft Mixed Reality headsets and controllers on Microsoft Edge thanks to the work of Olga Milovanova, Lewis Weaver, Nell Waliczek and Samira Hirji. A-Frame 0.7.0 fully adopts glTF 2.0, unlockin">
     <meta property="og:image" content="https://user-images.githubusercontent.com/39342/30718754-cdc31786-9ed5-11e7-84a5-eda80089fd8b.gif">
     <meta property="og:image:secure_url" content="https://user-images.githubusercontent.com/39342/30718754-cdc31786-9ed5-11e7-84a5-eda80089fd8b.gif">
@@ -62,11 +70,11 @@
     <meta name="twitter:image" content="https://user-images.githubusercontent.com/39342/30718754-cdc31786-9ed5-11e7-84a5-eda80089fd8b.gif">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="black">
-    <link rel="icon" sizes="192x192" href="http://localhost:4000/images/aframe-logo-192.png">
+    <link rel="icon" sizes="192x192" href="https://aframe.io/images/aframe-logo-192.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon" href="http://localhost:4000/images/aframe-logo-152.png">
-    <link rel="alternate" type="application/rss+xml" title="Feed" href="http://localhost:4000/feed.xml">
+    <link rel="apple-touch-icon" href="https://aframe.io/images/aframe-logo-152.png">
+    <link rel="alternate" type="application/rss+xml" title="Feed" href="https://aframe.io/feed.xml">
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -184,9 +192,9 @@
       </li>
     
       <li  data-slug="slug" class="nav-item">
-        <a target="_blank" href="https://aframe.io/slack-invite/"
+        <a href="https://aframe.io/slack-invite/"
            class="nav-link nav-link-docs"
-            rel="external noopener"
+            rel="external"
             title="Sign up to the A-Frame Slack">
           <span>Slack</span>
         </a>
@@ -202,9 +210,9 @@
       </li>
     
       <li  class="nav-item">
-        <a target="_blank" href="https://aframe.io/subscribe/"
+        <a href="https://aframe.io/subscribe/"
            class="nav-link nav-link-docs"
-            rel="external noopener"
+            rel="external"
            >
           <span>Newsletter</span>
         </a>
@@ -1759,7 +1767,7 @@
 
           <p>We welcome Microsoft to the A-Frame family. 0.7.0 ships out of the box support for Microsoft Mixed Reality headsets and controllers on Microsoft Edge thanks to the work of <a target="_blank" rel="noopener" href="https://github.com/olga-microsoft">Olga Milovanova</a>, <a target="_blank" rel="noopener" href="https://github.com/leweaver">Lewis Weaver</a>, <a target="_blank" rel="noopener" href="https://github.com/NellWaliczek">Nell Waliczek</a> and <a target="_blank" rel="noopener" href="https://github.com/SamiraAtMicrosoft">Samira Hirji</a>. A-Frame 0.7.0 fully adopts glTF 2.0, unlocking a huge pool of models you can now import in your experiences.</p>
 <p>Use it today with <code>&lt;script src=&quot;https://aframe.io/releases/0.7.0/aframe.min.js&quot;&gt;&lt;/script&gt;</code>.</p>
-<h2 id="what’s-new"><a href="#what’s-new" class="headerlink" title="What’s New?"></a>What’s New?</h2><p>The glTF ecosystem has made huge progress and all the learnings have consolidated in the 2.0 version of the format. Thanks to the work of <a target="_blank" rel="noopener" href="http://github.com/donmccurdy/">Don McCurdy</a> and <a target="_blank" rel="noopener" href="https://github.com/takahirox">Takahiro</a> on A-Frame and THREE fronts you can now import glTF 2.0 models with a <a target="_blank" rel="noopener" href="https://aframe.io/docs/0.7.0/components/gltf-model.html#example">single line of markup</a>.</p>
+<h2 id="what’s-new"><a href="#what’s-new" class="headerlink" title="What’s New?"></a>What’s New?</h2><p>The glTF ecosystem has made huge progress and all the learnings have consolidated in the 2.0 version of the format. Thanks to the work of <a target="_blank" rel="noopener" href="http://github.com/donmccurdy/">Don McCurdy</a> and <a target="_blank" rel="noopener" href="https://github.com/takahirox">Takahiro</a> on A-Frame and THREE fronts you can now import glTF 2.0 models with a <a href="https://aframe.io/docs/0.7.0/components/gltf-model.html#example">single line of markup</a>.</p>
 <p>Microsoft is fully embracing immersive computing with Windows Mixed Reality and you can now have fun with your favorite framework on Microsoft Edge as well.</p>
 <p>0.7.0 has now full support for all the major headsets and controllers: Daydream, Gear VR, Windows Mixed Reality, Oculus Rift and HTC Vive.</p>
 <p>Performance is top priority for us and A-Frame 0.7.0 ships a bunch of improvements to tame the garbage collector beast:</p>
@@ -1775,7 +1783,7 @@ includes a list of all new features, optimizations, and bug fixes.</p>
 <span id="more"></span>
 <h2 id="what-have-people-built"><a href="#what-have-people-built" class="headerlink" title="What Have People Built?"></a>What Have People Built?</h2><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<p>We’ve had over 10 entries of <a target="_blank" rel="noopener" href="https://aframe.io/blog/">A Week of A-Frame</a> since
+<p>We’ve had over 10 entries of <a href="https://aframe.io/blog/">A Week of A-Frame</a> since
 v0.6.0 was released. Highlights include the release of WebVR in Firefox 55. A-Frame powered immersive Websites are now just one click away for millions of people. We saw great progress made on multiuser experiences thanks to the <a target="_blank" rel="noopener" href="https://github.com/haydenjameslee/networked-aframe">Networked A-Frame Component</a>. The quality of the tooling is sky rocketing as <a target="_blank" rel="noopener" href="https://hologram.cool/">Hologram</a> or <a target="_blank" rel="noopener" href="https://fasility.com/beblock/#link=https://vr.google.com/objects/2AJLgaNhQTD&amp;env=tron&amp;shadows=false&amp;smooth=false&amp;rap=0~0&amp;mode=orbit&amp;height=0&amp;scale=1">BeBlock</a> demonstrate. VR UIs are getting fancy thanks to the <a target="_blank" rel="noopener" href="https://github.com/etiennepinchon/aframe-material">A-Frame Material Kit</a>. WebVR calls back home as <a target="_blank" rel="noopener" href="http://home.cern/">CERN</a>, where the Web was born, dips the toes in A-Frame. That’s a top achievement unlocked by the whole community.</p>
 <div class="tweets">
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Tada!! 🎉😁 <a target="_blank" rel="noopener" href="https://twitter.com/aframevr">@aframevr</a> is getting a keyboard, input, checkbox, radio button and way more with a material design look! <a target="_blank" rel="noopener" href="https://t.co/HCDNVAoqYm">https://t.co/HCDNVAoqYm</a> <a target="_blank" rel="noopener" href="https://t.co/XDYj3DgEts">pic.twitter.com/XDYj3DgEts</a></p>&mdash; Etienne Pinchon (@EtiennePinchon) <a target="_blank" rel="noopener" href="https://twitter.com/EtiennePinchon/status/904539478823448578">September 4, 2017</a></blockquote>
@@ -1795,7 +1803,7 @@ v0.6.0 was released. Highlights include the release of WebVR in Firefox 55. A-Fr
 <ul>
 <li>A-Frame has gained 24 new contributors, totalling 193.</li>
 <li>We have 749 new members in the Slack community for a total of 4,734. </li>
-<li>101,966 people have visited <a target="_blank" rel="noopener" href="https://aframe.io">aframe.io</a> since last release.</li>
+<li>101,966 people have visited <a href="https://aframe.io">aframe.io</a> since last release.</li>
 </ul>
 <h2 id="what’s-next"><a href="#what’s-next" class="headerlink" title="What’s Next?"></a>What’s Next?</h2><p>We will keep profiling and measuring to make sure that A-Frame overhead is negligable and your content runs buttery smooth. We are starting to consolidate the API and want to get soon to a point we feel confortable with the design and ship a 1.0.0 release. 0.7.0 has shippped a bit earlier than we planned to make sure that Windows Mixed Reality headsets and Microsoft Edge are well supported at launch. A couple of features, such as Vive tracker support and spectator camera, have moved to 0.8.0. Keep an eye on the <a target="_blank" rel="noopener" href="https://github.com/aframevr/aframe/blob/master/ROADMAP.md">roadmap</a> to see what’s coming.</p>
 

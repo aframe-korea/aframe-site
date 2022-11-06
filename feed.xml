@@ -4,17 +4,17 @@
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>A-Frame</title>
-    <link>http://localhost:4000/</link>
+    <link>https://aframe.io/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>A web framework for building virtual reality experiences. Make WebVR with HTML and Entity-Component. Works on Vive, Rift, desktop, mobile platforms.</description>
-    <pubDate>Sun, 06 Nov 2022 03:45:04 GMT</pubDate>
+    <pubDate>Sun, 06 Nov 2022 03:54:46 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
       <title>A-Frame 1.1.0 - AR, Quest 2 Support, hand tracking, compositor layers, immersive navigation</title>
-      <link>http://localhost:4000/blog/aframe-v1.1.0/</link>
-      <guid>http://localhost:4000/blog/aframe-v1.1.0/</guid>
+      <link>https://aframe.io/blog/aframe-v1.1.0/</link>
+      <guid>https://aframe.io/blog/aframe-v1.1.0/</guid>
       <pubDate>Wed, 16 Dec 2020 00:00:00 GMT</pubDate>
       <description>
       
@@ -34,13 +34,13 @@ experiences. What started as a little personal project it’s today a community 
 <p>Happy immersive Christmas! 🎄</p>
 ]]></content:encoded>
       
-      <comments>http://localhost:4000/blog/aframe-v1.1.0/#disqus_thread</comments>
+      <comments>https://aframe.io/blog/aframe-v1.1.0/#disqus_thread</comments>
     </item>
     
     <item>
       <title>A-Frame Newsletter 2</title>
-      <link>http://localhost:4000/blog/newsletter2/</link>
-      <guid>http://localhost:4000/blog/newsletter2/</guid>
+      <link>https://aframe.io/blog/newsletter2/</link>
+      <guid>https://aframe.io/blog/newsletter2/</guid>
       <pubDate>Sat, 16 May 2020 00:00:00 GMT</pubDate>
       <description>
       
@@ -444,13 +444,13 @@ experiences. What started as a little personal project it’s today a community 
 
 ]]></content:encoded>
       
-      <comments>http://localhost:4000/blog/newsletter2/#disqus_thread</comments>
+      <comments>https://aframe.io/blog/newsletter2/#disqus_thread</comments>
     </item>
     
     <item>
       <title>Image Tracking and Location-Based AR with A-Frame and AR.js 3</title>
-      <link>http://localhost:4000/blog/arjs3/</link>
-      <guid>http://localhost:4000/blog/arjs3/</guid>
+      <link>https://aframe.io/blog/arjs3/</link>
+      <guid>https://aframe.io/blog/arjs3/</guid>
       <pubDate>Thu, 26 Mar 2020 10:00:00 GMT</pubDate>
       <description>
       
@@ -522,13 +522,13 @@ We will love to check them out!</p>
 </ul>
 ]]></content:encoded>
       
-      <comments>http://localhost:4000/blog/arjs3/#disqus_thread</comments>
+      <comments>https://aframe.io/blog/arjs3/#disqus_thread</comments>
     </item>
     
     <item>
       <title>Experiment with AR and A-Frame</title>
-      <link>http://localhost:4000/blog/webxr-ar-module/</link>
-      <guid>http://localhost:4000/blog/webxr-ar-module/</guid>
+      <link>https://aframe.io/blog/webxr-ar-module/</link>
+      <guid>https://aframe.io/blog/webxr-ar-module/</guid>
       <pubDate>Tue, 31 Dec 2019 00:00:00 GMT</pubDate>
       <description>
       
@@ -559,13 +559,13 @@ feedback support every now and then to keep us going in this grassroots
 project.</p>
 ]]></content:encoded>
       
-      <comments>http://localhost:4000/blog/webxr-ar-module/#disqus_thread</comments>
+      <comments>https://aframe.io/blog/webxr-ar-module/#disqus_thread</comments>
     </item>
     
     <item>
       <title>A-Frame v1.0.0 - WebXR Support, AR Mode</title>
-      <link>http://localhost:4000/blog/aframe-v1.0.0/</link>
-      <guid>http://localhost:4000/blog/aframe-v1.0.0/</guid>
+      <link>https://aframe.io/blog/aframe-v1.0.0/</link>
+      <guid>https://aframe.io/blog/aframe-v1.0.0/</guid>
       <pubDate>Mon, 16 Dec 2019 00:00:00 GMT</pubDate>
       <description>
       
@@ -742,13 +742,13 @@ project.</p>
 
 ]]></content:encoded>
       
-      <comments>http://localhost:4000/blog/aframe-v1.0.0/#disqus_thread</comments>
+      <comments>https://aframe.io/blog/aframe-v1.0.0/#disqus_thread</comments>
     </item>
     
     <item>
       <title>A-Frame Newsletter 1</title>
-      <link>http://localhost:4000/blog/newsletter1/</link>
-      <guid>http://localhost:4000/blog/newsletter1/</guid>
+      <link>https://aframe.io/blog/newsletter1/</link>
+      <guid>https://aframe.io/blog/newsletter1/</guid>
       <pubDate>Fri, 06 Dec 2019 00:00:00 GMT</pubDate>
       <description>
       
@@ -1116,13 +1116,13 @@ set your location and see constellations above you in real time.</p>
 </div>
 ]]></content:encoded>
       
-      <comments>http://localhost:4000/blog/newsletter1/#disqus_thread</comments>
+      <comments>https://aframe.io/blog/newsletter1/#disqus_thread</comments>
     </item>
     
     <item>
       <title>A Week of A-Frame 170 - 172</title>
-      <link>http://localhost:4000/blog/awoa-170-172/</link>
-      <guid>http://localhost:4000/blog/awoa-170-172/</guid>
+      <link>https://aframe.io/blog/awoa-170-172/</link>
+      <guid>https://aframe.io/blog/awoa-170-172/</guid>
       <pubDate>Fri, 12 Jul 2019 00:00:00 GMT</pubDate>
       <description>
       
@@ -1276,13 +1276,13 @@ set your location and see constellations above you in real time.</p>
 
 ]]></content:encoded>
       
-      <comments>http://localhost:4000/blog/awoa-170-172/#disqus_thread</comments>
+      <comments>https://aframe.io/blog/awoa-170-172/#disqus_thread</comments>
     </item>
     
     <item>
       <title>A Week of A-Frame 164 - 169</title>
-      <link>http://localhost:4000/blog/awoa-164-169/</link>
-      <guid>http://localhost:4000/blog/awoa-164-169/</guid>
+      <link>https://aframe.io/blog/awoa-164-169/</link>
+      <guid>https://aframe.io/blog/awoa-164-169/</guid>
       <pubDate>Fri, 21 Jun 2019 00:00:00 GMT</pubDate>
       <description>
       
@@ -1550,13 +1550,13 @@ set your location and see constellations above you in real time.</p>
 
 ]]></content:encoded>
       
-      <comments>http://localhost:4000/blog/awoa-164-169/#disqus_thread</comments>
+      <comments>https://aframe.io/blog/awoa-164-169/#disqus_thread</comments>
     </item>
     
     <item>
       <title>A Week of A-Frame 162 + 163</title>
-      <link>http://localhost:4000/blog/awoa-162-163/</link>
-      <guid>http://localhost:4000/blog/awoa-162-163/</guid>
+      <link>https://aframe.io/blog/awoa-162-163/</link>
+      <guid>https://aframe.io/blog/awoa-162-163/</guid>
       <pubDate>Fri, 10 May 2019 00:00:00 GMT</pubDate>
       <description>
       
@@ -1718,13 +1718,13 @@ set your location and see constellations above you in real time.</p>
 
 ]]></content:encoded>
       
-      <comments>http://localhost:4000/blog/awoa-162-163/#disqus_thread</comments>
+      <comments>https://aframe.io/blog/awoa-162-163/#disqus_thread</comments>
     </item>
     
     <item>
       <title>A Week of A-Frame 159 - 161</title>
-      <link>http://localhost:4000/blog/awoa-159-161/</link>
-      <guid>http://localhost:4000/blog/awoa-159-161/</guid>
+      <link>https://aframe.io/blog/awoa-159-161/</link>
+      <guid>https://aframe.io/blog/awoa-159-161/</guid>
       <pubDate>Thu, 25 Apr 2019 00:00:00 GMT</pubDate>
       <description>
       
@@ -1884,13 +1884,13 @@ set your location and see constellations above you in real time.</p>
 
 ]]></content:encoded>
       
-      <comments>http://localhost:4000/blog/awoa-159-161/#disqus_thread</comments>
+      <comments>https://aframe.io/blog/awoa-159-161/#disqus_thread</comments>
     </item>
     
     <item>
       <title>A Week of A-Frame 157 + 158</title>
-      <link>http://localhost:4000/blog/awoa-157-158/</link>
-      <guid>http://localhost:4000/blog/awoa-157-158/</guid>
+      <link>https://aframe.io/blog/awoa-157-158/</link>
+      <guid>https://aframe.io/blog/awoa-157-158/</guid>
       <pubDate>Thu, 04 Apr 2019 00:00:00 GMT</pubDate>
       <description>
       
@@ -2054,13 +2054,13 @@ and hear what they have to say.</li>
 </div>
 ]]></content:encoded>
       
-      <comments>http://localhost:4000/blog/awoa-157-158/#disqus_thread</comments>
+      <comments>https://aframe.io/blog/awoa-157-158/#disqus_thread</comments>
     </item>
     
     <item>
       <title>A Week of A-Frame 155 + 156</title>
-      <link>http://localhost:4000/blog/awoa-155-156/</link>
-      <guid>http://localhost:4000/blog/awoa-155-156/</guid>
+      <link>https://aframe.io/blog/awoa-155-156/</link>
+      <guid>https://aframe.io/blog/awoa-155-156/</guid>
       <pubDate>Thu, 21 Mar 2019 00:00:00 GMT</pubDate>
       <description>
       
@@ -2189,13 +2189,13 @@ and hear what they have to say.</li>
 
 ]]></content:encoded>
       
-      <comments>http://localhost:4000/blog/awoa-155-156/#disqus_thread</comments>
+      <comments>https://aframe.io/blog/awoa-155-156/#disqus_thread</comments>
     </item>
     
     <item>
       <title>A Week of A-Frame 153 - 154</title>
-      <link>http://localhost:4000/blog/awoa-153-154/</link>
-      <guid>http://localhost:4000/blog/awoa-153-154/</guid>
+      <link>https://aframe.io/blog/awoa-153-154/</link>
+      <guid>https://aframe.io/blog/awoa-153-154/</guid>
       <pubDate>Thu, 07 Mar 2019 00:00:00 GMT</pubDate>
       <description>
       
@@ -2381,13 +2381,13 @@ and hear what they have to say.</li>
 
 ]]></content:encoded>
       
-      <comments>http://localhost:4000/blog/awoa-153-154/#disqus_thread</comments>
+      <comments>https://aframe.io/blog/awoa-153-154/#disqus_thread</comments>
     </item>
     
     <item>
       <title>A Week of A-Frame 149 - 152</title>
-      <link>http://localhost:4000/blog/awoa-149-152/</link>
-      <guid>http://localhost:4000/blog/awoa-149-152/</guid>
+      <link>https://aframe.io/blog/awoa-149-152/</link>
+      <guid>https://aframe.io/blog/awoa-149-152/</guid>
       <pubDate>Thu, 21 Feb 2019 00:00:00 GMT</pubDate>
       <description>
       
@@ -2610,13 +2610,13 @@ and hear what they have to say.</li>
 
 ]]></content:encoded>
       
-      <comments>http://localhost:4000/blog/awoa-149-152/#disqus_thread</comments>
+      <comments>https://aframe.io/blog/awoa-149-152/#disqus_thread</comments>
     </item>
     
     <item>
       <title>A-Frame v0.9.0 - Perf &amp; Initial WebXR</title>
-      <link>http://localhost:4000/blog/aframe-v0.9.0/</link>
-      <guid>http://localhost:4000/blog/aframe-v0.9.0/</guid>
+      <link>https://aframe.io/blog/aframe-v0.9.0/</link>
+      <guid>https://aframe.io/blog/aframe-v0.9.0/</guid>
       <pubDate>Mon, 11 Feb 2019 10:00:00 GMT</pubDate>
       <description>
       
@@ -2763,7 +2763,7 @@ A-Frame API. Perhaps provide more streamlined tools for A-Frame development.</p>
 <p>Thanks to everyone for filing issues, contributing, and sharing your projects!</p>
 ]]></content:encoded>
       
-      <comments>http://localhost:4000/blog/aframe-v0.9.0/#disqus_thread</comments>
+      <comments>https://aframe.io/blog/aframe-v0.9.0/#disqus_thread</comments>
     </item>
     
   </channel>

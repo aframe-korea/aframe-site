@@ -20,11 +20,11 @@
       data-is-mobile="false"
       data-supports-vr="false"
       data-supports-touch="false"
-      data-site-base-url="http://localhost:4000"
+      data-site-base-url="https://aframe.io"
       data-site-root-path="/"
-      data-site-home-url="http://localhost:4000/"
-      data-lib-home-url="http://localhost:9000"
-      data-lib-examples-url="http://localhost:9000/examples"
+      data-site-home-url="https://aframe.io/"
+      data-lib-home-url="https://aframe.io/"
+      data-lib-examples-url="https://aframe.io/aframe/examples"
       data-title="{title} | A-Frame"
       data-is-spa="false"
       data-ga-id="UA-111391431-24"
@@ -34,11 +34,19 @@
     <title>Experiment with AR and A-Frame – A-Frame</title>
     
 
+<script>
+  var host = window.location.protocol + '//' + window.location.hostname;
+  if (window.location.protocol === 'http:' &&
+      window.location.hostname === 'https://aframe.io') {
+    window.location.href = 'https:' + window.location.href.substring(6);
+  }
+</script>
+
 
     <meta charset="utf-8">
     <!-- Don't index old documentation pages. -->
     <meta name="robots"
-      content="none">
+      content="all">
     <meta name="description" content="Google Chrome and Oculus Browser are now shipping WebXR enabled by default for VR headsets. The Web magic doesn’t stop there. AR is also coming to the standard and you can experiment today on Android ARCore compatible devices and Chrome 79 or newer.
 Enable the experimental WebXR ">
     <meta name="keywords" content="webvr,webvr framework,webvr demos,webvr sites,vr javascript,vr framework">
@@ -47,31 +55,31 @@ Enable the experimental WebXR ">
     <meta http-equiv="origin-trial" data-feature=" WebXR Device API (For Chrome M69+)" data-expires="2019-03-05" content="Ako5ueZ8LIub4MywyaWBtX6FQOVZBYPxDUBC09XfJRjVfQH1GXOaRO8v4/TQWyPdmw2qm8nJ/f9QfFwE+t20NwsAAABkeyJvcmlnaW4iOiJodHRwczovL2FmcmFtZS5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViWFJEZXZpY2VNNjkiLCJleHBpcnkiOjE1NTE4MzAzOTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
     <!-- Origin Trial Token, feature = WebVR (For Chrome M62+), origin = https://aframe.io, expires = 2018-08-09 -->
     <meta http-equiv="origin-trial" data-feature="WebVR (For Chrome M62+)" data-expires="2018-08-09" content="AlKeBeX7MGtuPmoZUks7FEWi6ke/EeYDPS1zhkb9bsdGr+r9gv+vYXGN7pUIz8+4XPxpWi7guenedSC1jM8B6AcAAABOeyJvcmlnaW4iOiJodHRwczovL2FmcmFtZS5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViVlIxLjFNNjIiLCJleHBpcnkiOjE1MzM4NDAyMzN9">
-    <link rel="canonical" href="http://localhost:4000">
+    <link rel="canonical" href="https://aframe.io">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600" rel="stylesheet">
     <meta property="fb:app_id" content="1535794316743373">
     <meta property="og:title" content="Experiment with AR and A-Frame – A-Frame">
     <meta property="og:site_name" content="A-Frame">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://localhost:4000">
+    <meta property="og:url" content="https://aframe.io">
     <meta property="og:description" content="Google Chrome and Oculus Browser are now shipping WebXR enabled by default for VR headsets. The Web magic doesn’t stop there. AR is also coming to the standard and you can experiment today on Android ARCore compatible devices and Chrome 79 or newer.
 Enable the experimental WebXR ">
-    <meta property="og:image" content="http://localhost:4000/images/blog/ar-comic.gif">
-    <meta property="og:image:secure_url" content="http://localhost:4000/images/blog/ar-comic.gif">
+    <meta property="og:image" content="https://aframe.io/images/blog/ar-comic.gif">
+    <meta property="og:image:secure_url" content="https://aframe.io/images/blog/ar-comic.gif">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@aframevr">
     <meta name="twitter:creator" content="@aframevr">
     <meta name="twitter:title" content="Experiment with AR and A-Frame – A-Frame">
     <meta name="twitter:description" content="Google Chrome and Oculus Browser are now shipping WebXR enabled by default for VR headsets. The Web magic doesn’t stop there. AR is also coming to the standard and you can experiment today on Android ARCore compatible devices and Chrome 79 or newer.
 Enable the experimental WebXR ">
-    <meta name="twitter:image" content="http://localhost:4000/images/blog/ar-comic.gif">
+    <meta name="twitter:image" content="https://aframe.io/images/blog/ar-comic.gif">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="black">
-    <link rel="icon" sizes="192x192" href="http://localhost:4000/images/aframe-logo-192.png">
+    <link rel="icon" sizes="192x192" href="https://aframe.io/images/aframe-logo-192.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon" href="http://localhost:4000/images/aframe-logo-152.png">
-    <link rel="alternate" type="application/rss+xml" title="Feed" href="http://localhost:4000/feed.xml">
+    <link rel="apple-touch-icon" href="https://aframe.io/images/aframe-logo-152.png">
+    <link rel="alternate" type="application/rss+xml" title="Feed" href="https://aframe.io/feed.xml">
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -189,9 +197,9 @@ Enable the experimental WebXR ">
       </li>
     
       <li  data-slug="slug" class="nav-item">
-        <a target="_blank" href="https://aframe.io/slack-invite/"
+        <a href="https://aframe.io/slack-invite/"
            class="nav-link nav-link-docs"
-            rel="external noopener"
+            rel="external"
             title="Sign up to the A-Frame Slack">
           <span>Slack</span>
         </a>
@@ -207,9 +215,9 @@ Enable the experimental WebXR ">
       </li>
     
       <li  class="nav-item">
-        <a target="_blank" href="https://aframe.io/subscribe/"
+        <a href="https://aframe.io/subscribe/"
            class="nav-link nav-link-docs"
-            rel="external noopener"
+            rel="external"
            >
           <span>Newsletter</span>
         </a>
@@ -1780,7 +1788,7 @@ Enable the experimental WebXR ">
 <p><strong><a target="_blank" rel="noopener" href="https://github.com/immersive-web/dom-overlays/blob/master/explainer.md">DOM Overlay layer</a></strong></p>
 <p>When entering AR or VR mode, only WebGL content and the real world or camera image are rendered on screen. DOM layers will allow overlaying HTML elements to present for instance 2D UIs, instructions or contextual information associated to virtual or real world objects.</p>
 <p><strong><a target="_blank" rel="noopener" href="https://discordapp.com/invite/tGYjkYr">Join our discord channel</a></strong>. The community will love to see what you make.</p>
-<p>If you’d like to continue to support us, please <strong><a target="_blank" rel="noopener" href="https://aframe.io/subscribe/">subscribe to the A-Frame
+<p>If you’d like to continue to support us, please <strong><a href="https://aframe.io/subscribe/">subscribe to the A-Frame
 newsletter</a></strong> where we’ll not only provide
 updates and showcase community projects, but requests for testing and user
 feedback support every now and then to keep us going in this grassroots

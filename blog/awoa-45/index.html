@@ -18,11 +18,11 @@
       data-is-mobile="false"
       data-supports-vr="false"
       data-supports-touch="false"
-      data-site-base-url="http://localhost:4000"
+      data-site-base-url="https://aframe.io"
       data-site-root-path="/"
-      data-site-home-url="http://localhost:4000/"
-      data-lib-home-url="http://localhost:9000"
-      data-lib-examples-url="http://localhost:9000/examples"
+      data-site-home-url="https://aframe.io/"
+      data-lib-home-url="https://aframe.io/"
+      data-lib-examples-url="https://aframe.io/aframe/examples"
       data-title="{title} | A-Frame"
       data-is-spa="false"
       data-ga-id="UA-111391431-24"
@@ -32,11 +32,19 @@
     <title>A Week of A-Frame 45 – A-Frame</title>
     
 
+<script>
+  var host = window.location.protocol + '//' + window.location.hostname;
+  if (window.location.protocol === 'http:' &&
+      window.location.hostname === 'https://aframe.io') {
+    window.location.href = 'https:' + window.location.href.substring(6);
+  }
+</script>
+
 
     <meta charset="utf-8">
     <!-- Don't index old documentation pages. -->
     <meta name="robots"
-      content="none">
+      content="all">
     <meta name="description" content="
 
 The text component has landed!.
@@ -55,13 +63,13 @@ component or try it out
     <meta http-equiv="origin-trial" data-feature=" WebXR Device API (For Chrome M69+)" data-expires="2019-03-05" content="Ako5ueZ8LIub4MywyaWBtX6FQOVZBYPxDUBC09XfJRjVfQH1GXOaRO8v4/TQWyPdmw2qm8nJ/f9QfFwE+t20NwsAAABkeyJvcmlnaW4iOiJodHRwczovL2FmcmFtZS5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViWFJEZXZpY2VNNjkiLCJleHBpcnkiOjE1NTE4MzAzOTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
     <!-- Origin Trial Token, feature = WebVR (For Chrome M62+), origin = https://aframe.io, expires = 2018-08-09 -->
     <meta http-equiv="origin-trial" data-feature="WebVR (For Chrome M62+)" data-expires="2018-08-09" content="AlKeBeX7MGtuPmoZUks7FEWi6ke/EeYDPS1zhkb9bsdGr+r9gv+vYXGN7pUIz8+4XPxpWi7guenedSC1jM8B6AcAAABOeyJvcmlnaW4iOiJodHRwczovL2FmcmFtZS5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViVlIxLjFNNjIiLCJleHBpcnkiOjE1MzM4NDAyMzN9">
-    <link rel="canonical" href="http://localhost:4000">
+    <link rel="canonical" href="https://aframe.io">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600" rel="stylesheet">
     <meta property="fb:app_id" content="1535794316743373">
     <meta property="og:title" content="A Week of A-Frame 45 – A-Frame">
     <meta property="og:site_name" content="A-Frame">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://localhost:4000">
+    <meta property="og:url" content="https://aframe.io">
     <meta property="og:description" content="
 
 The text component has landed!.
@@ -74,8 +82,8 @@ shepherding it into core!
 Read about the text
 component or try it out
 (b">
-    <meta property="og:image" content="http://localhost:4000/images/card.jpg?v2">
-    <meta property="og:image:secure_url" content="http://localhost:4000/images/card.jpg?v2">
+    <meta property="og:image" content="http://aframe.io/images/card.jpg?v2">
+    <meta property="og:image:secure_url" content="https://aframe.io/images/card.jpg?v2">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@aframevr">
     <meta name="twitter:creator" content="@aframevr">
@@ -92,14 +100,14 @@ shepherding it into core!
 Read about the text
 component or try it out
 (b">
-    <meta name="twitter:image" content="http://localhost:4000/images/card.jpg?v2">
+    <meta name="twitter:image" content="http://aframe.io/images/card.jpg?v2">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="black">
-    <link rel="icon" sizes="192x192" href="http://localhost:4000/images/aframe-logo-192.png">
+    <link rel="icon" sizes="192x192" href="https://aframe.io/images/aframe-logo-192.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon" href="http://localhost:4000/images/aframe-logo-152.png">
-    <link rel="alternate" type="application/rss+xml" title="Feed" href="http://localhost:4000/feed.xml">
+    <link rel="apple-touch-icon" href="https://aframe.io/images/aframe-logo-152.png">
+    <link rel="alternate" type="application/rss+xml" title="Feed" href="https://aframe.io/feed.xml">
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -217,9 +225,9 @@ component or try it out
       </li>
     
       <li  data-slug="slug" class="nav-item">
-        <a target="_blank" href="https://aframe.io/slack-invite/"
+        <a href="https://aframe.io/slack-invite/"
            class="nav-link nav-link-docs"
-            rel="external noopener"
+            rel="external"
             title="Sign up to the A-Frame Slack">
           <span>Slack</span>
         </a>
@@ -235,9 +243,9 @@ component or try it out
       </li>
     
       <li  class="nav-item">
-        <a target="_blank" href="https://aframe.io/subscribe/"
+        <a href="https://aframe.io/subscribe/"
            class="nav-link nav-link-docs"
-            rel="external noopener"
+            rel="external"
            >
           <span>Newsletter</span>
         </a>
@@ -1797,7 +1805,7 @@ the component, <a target="_blank" rel="noopener" href="https://twitter.com/ferna
 the component, and <a target="_blank" rel="noopener" href="https://twitter.com/machenmusik">@machenmusik</a> for
 shepherding it into core!</p>
 <p><img src="https://cloud.githubusercontent.com/assets/674727/22370965/2fd4ab62-e449-11e6-9bcd-46289ace8db3.png" alt="Text"></p>
-<p><a target="_blank" rel="noopener" href="https://aframe.io/docs/master/components/text.html">Read about the text
+<p><a href="https://aframe.io/docs/master/components/text.html">Read about the text
 component</a> or <a target="_blank" rel="noopener" href="https://a-frobot.github.io/aframe/examples/test/text/">try it out
 (best played with the
 Inspector)!</a>.</p>
@@ -1845,7 +1853,7 @@ more efficient and convenient!</p>
 
 <p><a target="_blank" rel="noopener" href="https://github.com/zcanter/aframe-gradient-sky">Gradient Sky</a> by Zac Canter.</p>
 <p><img src="https://cloud.githubusercontent.com/assets/674727/22370860/85cb2dbc-e448-11e6-85e8-18e158233de3.png" alt="Gradient Sky"></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/mayognaise/aframe-mouse-cursor-component">Mouse Cursor Component</a> added to the <a target="_blank" rel="noopener" href="https://aframe.io/registry/">Registry</a>!</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/mayognaise/aframe-mouse-cursor-component">Mouse Cursor Component</a> added to the <a href="https://aframe.io/registry/">Registry</a>!</p>
 <p><img src="https://cloud.githubusercontent.com/assets/674727/22370890/b364535c-e448-11e6-87ee-5bdb37196acc.gif" alt="Mouse Cursor GIF"></p>
 <h2 id="articles"><a href="#articles" class="headerlink" title="Articles"></a>Articles</h2><div class="tweets">
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Read our blog &#39;An Introduction to WebVR and A-Frame&#39; How to make <a target="_blank" rel="noopener" href="https://twitter.com/hashtag/VR?src=hash">#VR</a> experiences in <a target="_blank" rel="noopener" href="https://twitter.com/hashtag/JavaScript?src=hash">#JavaScript</a> by <a target="_blank" rel="noopener" href="https://twitter.com/Lr_K">@Lr_K</a> <a target="_blank" rel="noopener" href="https://twitter.com/hashtag/GameDev?src=hash">#GameDev</a> <a target="_blank" rel="noopener" href="https://t.co/vtzGXmhisK">https://t.co/vtzGXmhisK</a> <a target="_blank" rel="noopener" href="https://t.co/7wtN9iO0tF">pic.twitter.com/7wtN9iO0tF</a></p>&mdash; West Pier Studio (@WestPierStudio) <a target="_blank" rel="noopener" href="https://twitter.com/WestPierStudio/status/821284750287577089">January 17, 2017</a></blockquote>

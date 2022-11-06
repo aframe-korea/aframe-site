@@ -20,11 +20,11 @@
       data-is-mobile="false"
       data-supports-vr="false"
       data-supports-touch="false"
-      data-site-base-url="http://localhost:4000"
+      data-site-base-url="https://aframe.io"
       data-site-root-path="/"
-      data-site-home-url="http://localhost:4000/"
-      data-lib-home-url="http://localhost:9000"
-      data-lib-examples-url="http://localhost:9000/examples"
+      data-site-home-url="https://aframe.io/"
+      data-lib-home-url="https://aframe.io/"
+      data-lib-examples-url="https://aframe.io/aframe/examples"
       data-title="{title} | A-Frame"
       data-is-spa="false"
       data-ga-id="UA-111391431-24"
@@ -34,11 +34,19 @@
     <title>A-Frame v0.5.0 - Features & Tools – A-Frame</title>
     
 
+<script>
+  var host = window.location.protocol + '//' + window.location.hostname;
+  if (window.location.protocol === 'http:' &&
+      window.location.hostname === 'https://aframe.io') {
+    window.location.href = 'https:' + window.location.href.substring(6);
+  }
+</script>
+
 
     <meta charset="utf-8">
     <!-- Don't index old documentation pages. -->
     <meta name="robots"
-      content="none">
+      content="all">
     <meta name="description" content="Give A-Frame a high five for the release of v0.5.0! This release pulls in
 highly-awaited components from the ecosystem such as text and glTF, addresses
 several large WebVR Polyfill bugs for smartphones, comes with a slew of
@@ -49,19 +57,19 @@ enhancements and bug fixes, and enables upcoming motion ">
     <meta http-equiv="origin-trial" data-feature=" WebXR Device API (For Chrome M69+)" data-expires="2019-03-05" content="Ako5ueZ8LIub4MywyaWBtX6FQOVZBYPxDUBC09XfJRjVfQH1GXOaRO8v4/TQWyPdmw2qm8nJ/f9QfFwE+t20NwsAAABkeyJvcmlnaW4iOiJodHRwczovL2FmcmFtZS5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViWFJEZXZpY2VNNjkiLCJleHBpcnkiOjE1NTE4MzAzOTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
     <!-- Origin Trial Token, feature = WebVR (For Chrome M62+), origin = https://aframe.io, expires = 2018-08-09 -->
     <meta http-equiv="origin-trial" data-feature="WebVR (For Chrome M62+)" data-expires="2018-08-09" content="AlKeBeX7MGtuPmoZUks7FEWi6ke/EeYDPS1zhkb9bsdGr+r9gv+vYXGN7pUIz8+4XPxpWi7guenedSC1jM8B6AcAAABOeyJvcmlnaW4iOiJodHRwczovL2FmcmFtZS5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViVlIxLjFNNjIiLCJleHBpcnkiOjE1MzM4NDAyMzN9">
-    <link rel="canonical" href="http://localhost:4000">
+    <link rel="canonical" href="https://aframe.io">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600" rel="stylesheet">
     <meta property="fb:app_id" content="1535794316743373">
     <meta property="og:title" content="A-Frame v0.5.0 - Features &amp; Tools – A-Frame">
     <meta property="og:site_name" content="A-Frame">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://localhost:4000">
+    <meta property="og:url" content="https://aframe.io">
     <meta property="og:description" content="Give A-Frame a high five for the release of v0.5.0! This release pulls in
 highly-awaited components from the ecosystem such as text and glTF, addresses
 several large WebVR Polyfill bugs for smartphones, comes with a slew of
 enhancements and bug fixes, and enables upcoming motion ">
-    <meta property="og:image" content="http://localhost:4000/images/blog/v0.5.0.gif">
-    <meta property="og:image:secure_url" content="http://localhost:4000/images/blog/v0.5.0.gif">
+    <meta property="og:image" content="https://aframe.io/images/blog/v0.5.0.gif">
+    <meta property="og:image:secure_url" content="https://aframe.io/images/blog/v0.5.0.gif">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@aframevr">
     <meta name="twitter:creator" content="@aframevr">
@@ -70,14 +78,14 @@ enhancements and bug fixes, and enables upcoming motion ">
 highly-awaited components from the ecosystem such as text and glTF, addresses
 several large WebVR Polyfill bugs for smartphones, comes with a slew of
 enhancements and bug fixes, and enables upcoming motion ">
-    <meta name="twitter:image" content="http://localhost:4000/images/blog/v0.5.0.gif">
+    <meta name="twitter:image" content="https://aframe.io/images/blog/v0.5.0.gif">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="black">
-    <link rel="icon" sizes="192x192" href="http://localhost:4000/images/aframe-logo-192.png">
+    <link rel="icon" sizes="192x192" href="https://aframe.io/images/aframe-logo-192.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon" href="http://localhost:4000/images/aframe-logo-152.png">
-    <link rel="alternate" type="application/rss+xml" title="Feed" href="http://localhost:4000/feed.xml">
+    <link rel="apple-touch-icon" href="https://aframe.io/images/aframe-logo-152.png">
+    <link rel="alternate" type="application/rss+xml" title="Feed" href="https://aframe.io/feed.xml">
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -195,9 +203,9 @@ enhancements and bug fixes, and enables upcoming motion ">
       </li>
     
       <li  data-slug="slug" class="nav-item">
-        <a target="_blank" href="https://aframe.io/slack-invite/"
+        <a href="https://aframe.io/slack-invite/"
            class="nav-link nav-link-docs"
-            rel="external noopener"
+            rel="external"
             title="Sign up to the A-Frame Slack">
           <span>Slack</span>
         </a>
@@ -213,9 +221,9 @@ enhancements and bug fixes, and enables upcoming motion ">
       </li>
     
       <li  class="nav-item">
-        <a target="_blank" href="https://aframe.io/subscribe/"
+        <a href="https://aframe.io/subscribe/"
            class="nav-link nav-link-docs"
-            rel="external noopener"
+            rel="external"
            >
           <span>Newsletter</span>
         </a>
@@ -1782,7 +1790,7 @@ initial <code>aframe-bmfont-text-component</code> to
 <a target="_blank" rel="noopener" href="https://twitter.com/machenmusik">mchen</a>‘s fork to mchen shepherding the
 component into A-Frame. The text component comes with several stock fonts and
 supports custom fonts, alignment, anchors, baselines, spacing, and wrapping.
-<a target="_blank" rel="noopener" href="https://aframe.io/docs/0.5.0/components/text.html">Read more about the text component</a>.</p>
+<a href="https://aframe.io/docs/0.5.0/components/text.html">Read more about the text component</a>.</p>
 <p><img src="https://cloud.githubusercontent.com/assets/674727/22808347/4daf3bc4-eee0-11e6-9af7-048faf188b0f.png" alt="Text"></p>
 <p>The <strong>glTF model</strong> component has also landed into A-Frame core! glTF (GL
 Transmission Format) is an open project by <a target="_blank" rel="noopener" href="https://www.khronos.org/">The Khronos
@@ -1791,7 +1799,7 @@ that is tailored for transmitting models over the Web.  The <code>gltf-model</co
 component loads a 3D glTF model with a line of HTML. Note that glTF is a fairly
 new specification and adoption is still growing, but a large portion of the
 WebVR community are optimistic that glTF will become the <code>.jpg</code>
-of 3D assets. <a target="_blank" rel="noopener" href="https://aframe.io/docs/0.5.0/components/gltf-model.html">Read more about the <code>gltf-model</code> component</a>.</p>
+of 3D assets. <a href="https://aframe.io/docs/0.5.0/components/gltf-model.html">Read more about the <code>gltf-model</code> component</a>.</p>
 <p>Thanks to everyone who worked on the three.js glTF loader
 (<a target="_blank" rel="noopener" href="https://github.com/richtr">richtr</a>, <a target="_blank" rel="noopener" href="https://twitter.com/mrdoob">@mrdoob</a>,
 <a target="_blank" rel="noopener" href="https://twitter.com/auradeluxe">@auradeluxe</a>,
@@ -1841,7 +1849,7 @@ or <a href="/blog/">visit the blog to check out editions of <em>A Week of A-Fram
 
 <p>A-Frame now boasts nearly 120 contributors on the primary A-Frame repository!
 While we haven’t started seriously focusing on populating the A-Frame Registry
-yet, <a target="_blank" rel="noopener" href="https://aframe.io/registry/">the A-Frame Registry now contains 25 curated
+yet, <a href="https://aframe.io/registry/">the A-Frame Registry now contains 25 curated
 components</a>.</p>
 <h2 id="what’s-next"><a href="#what’s-next" class="headerlink" title="What’s Next?"></a>What’s Next?</h2><p>Release cycles may seem a bit faster as our new friend,
 <a target="_blank" rel="noopener" href="https://github.com/a-frobot">A-Frobot</a> is generating new builds and supply
@@ -1870,7 +1878,7 @@ VR on to go, or send a recording for someone to take a look at!</p>
 but you could record paths and events on entities. Imagine creating a
 non-playable character (NPC) whose movements are pre-recorded through dancing
 or drawing the paths of airborne enemies with your hands. Perhaps you could paint
-a work of art with <a target="_blank" rel="noopener" href="https://aframe.io/a-painter/">A-Painter</a> and have others
+a work of art with <a href="https://aframe.io/a-painter/">A-Painter</a> and have others
 spectate the painting being drawn live.</p>
 <p>A fun demo around this tool will be released shortly. As we can say is,
 A-Frame’s gonna shake it off!</p>

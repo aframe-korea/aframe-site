@@ -18,11 +18,11 @@
       data-is-mobile="false"
       data-supports-vr="false"
       data-supports-touch="false"
-      data-site-base-url="http://localhost:4000"
+      data-site-base-url="https://aframe.io"
       data-site-root-path="/"
-      data-site-home-url="http://localhost:4000/"
-      data-lib-home-url="http://localhost:9000"
-      data-lib-examples-url="http://localhost:9000/examples"
+      data-site-home-url="https://aframe.io/"
+      data-lib-home-url="https://aframe.io/"
+      data-lib-examples-url="https://aframe.io/aframe/examples"
       data-title="{title} | A-Frame"
       data-is-spa="false"
       data-ga-id="UA-111391431-24"
@@ -31,6 +31,14 @@
   <head>
     <title>FAQ – A-Frame</title>
     
+
+<script>
+  var host = window.location.protocol + '//' + window.location.hostname;
+  if (window.location.protocol === 'http:' &&
+      window.location.hostname === 'https://aframe.io') {
+    window.location.href = 'https:' + window.location.href.substring(6);
+  }
+</script>
 
 
     <meta charset="utf-8">
@@ -44,29 +52,29 @@
     <meta http-equiv="origin-trial" data-feature=" WebXR Device API (For Chrome M69+)" data-expires="2019-03-05" content="Ako5ueZ8LIub4MywyaWBtX6FQOVZBYPxDUBC09XfJRjVfQH1GXOaRO8v4/TQWyPdmw2qm8nJ/f9QfFwE+t20NwsAAABkeyJvcmlnaW4iOiJodHRwczovL2FmcmFtZS5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViWFJEZXZpY2VNNjkiLCJleHBpcnkiOjE1NTE4MzAzOTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
     <!-- Origin Trial Token, feature = WebVR (For Chrome M62+), origin = https://aframe.io, expires = 2018-08-09 -->
     <meta http-equiv="origin-trial" data-feature="WebVR (For Chrome M62+)" data-expires="2018-08-09" content="AlKeBeX7MGtuPmoZUks7FEWi6ke/EeYDPS1zhkb9bsdGr+r9gv+vYXGN7pUIz8+4XPxpWi7guenedSC1jM8B6AcAAABOeyJvcmlnaW4iOiJodHRwczovL2FmcmFtZS5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViVlIxLjFNNjIiLCJleHBpcnkiOjE1MzM4NDAyMzN9">
-    <link rel="canonical" href="http://localhost:4000">
+    <link rel="canonical" href="https://aframe.io">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600" rel="stylesheet">
     <meta property="fb:app_id" content="1535794316743373">
     <meta property="og:title" content="FAQ – A-Frame">
     <meta property="og:site_name" content="A-Frame">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://localhost:4000">
+    <meta property="og:url" content="https://aframe.io">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:4000/images/card.jpg?v2">
-    <meta property="og:image:secure_url" content="http://localhost:4000/images/card.jpg?v2">
+    <meta property="og:image" content="http://aframe.io/images/card.jpg?v2">
+    <meta property="og:image:secure_url" content="https://aframe.io/images/card.jpg?v2">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@aframevr">
     <meta name="twitter:creator" content="@aframevr">
     <meta name="twitter:title" content="FAQ – A-Frame">
     <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="http://localhost:4000/images/card.jpg?v2">
+    <meta name="twitter:image" content="http://aframe.io/images/card.jpg?v2">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="black">
-    <link rel="icon" sizes="192x192" href="http://localhost:4000/images/aframe-logo-192.png">
+    <link rel="icon" sizes="192x192" href="https://aframe.io/images/aframe-logo-192.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon" href="http://localhost:4000/images/aframe-logo-152.png">
-    <link rel="alternate" type="application/rss+xml" title="Feed" href="http://localhost:4000/feed.xml">
+    <link rel="apple-touch-icon" href="https://aframe.io/images/aframe-logo-152.png">
+    <link rel="alternate" type="application/rss+xml" title="Feed" href="https://aframe.io/feed.xml">
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -188,9 +196,9 @@
       </li>
     
       <li  data-slug="slug" class="nav-item">
-        <a target="_blank" href="https://aframe.io/slack-invite/"
+        <a href="https://aframe.io/slack-invite/"
            class="nav-link nav-link-docs"
-            rel="external noopener"
+            rel="external"
             title="Sign up to the A-Frame Slack">
           <span>Slack</span>
         </a>
@@ -206,9 +214,9 @@
       </li>
     
       <li  class="nav-item">
-        <a target="_blank" href="https://aframe.io/subscribe/"
+        <a href="https://aframe.io/subscribe/"
            class="nav-link nav-link-docs"
-            rel="external noopener"
+            rel="external"
            >
           <span>Newsletter</span>
         </a>
@@ -1130,7 +1138,7 @@ either find a host to serve the asset with CORS headers, or place the asset on
 the same domain (directory) as your application.</p>
 <p>If you are trying to load a video, make sure the browser supports the video
 (i.e., encoding, framerate, size).</p>
-<p>Video autoplay policies are getting more and more strict and rules might vary across browsers. Mandatory user gesture is now commonly enforced. For maximum compatibility, you can offer a button that the user can click to start <a target="_blank" rel="noopener" href="http://localhost:9000/examples/test/video/">video playback</a>. <a target="_blank" rel="noopener" href="https://github.com/aframevr/aframe/blob/master/examples/test/video/index.html">Simple sample code</a> can be found in the docs. Pay particular attention to the <a target="_blank" rel="noopener" href="https://github.com/aframevr/aframe/blob/master/examples/js/play-on-click.js">play-on-click component</a></p>
+<p>Video autoplay policies are getting more and more strict and rules might vary across browsers. Mandatory user gesture is now commonly enforced. For maximum compatibility, you can offer a button that the user can click to start <a href="https://aframe.io/aframe/examples/test/video/">video playback</a>. <a target="_blank" rel="noopener" href="https://github.com/aframevr/aframe/blob/master/examples/test/video/index.html">Simple sample code</a> can be found in the docs. Pay particular attention to the <a target="_blank" rel="noopener" href="https://github.com/aframevr/aframe/blob/master/examples/js/play-on-click.js">play-on-click component</a></p>
 <p>Read the <a href="./hosting-and-publishing.md"><em>Hosting and Publishing</em> guide</a> for more
 information.</p>
 <h2 id="why-is-the-html-not-updating-when-i-check-the-browser-inspector"><a href="#why-is-the-html-not-updating-when-i-check-the-browser-inspector" class="headerlink" title="Why is the HTML not updating when I check the browser inspector?"></a>Why is the HTML not updating when I check the browser inspector?</h2><p>If you open up your browser’s developer tools, you’ll see that the HTML
@@ -1153,7 +1161,7 @@ if you need to sync to the DOM.</p>
 -<a target="_blank" rel="noopener" href="https://www.chromium.org/audio-video/autoplay">Chrome desktop</a>
 -<a target="_blank" rel="noopener" href="https://webkit.org/blog/7734/auto-play-policy-changes-for-macos/">Safari</a>
 -<a target="_blank" rel="noopener" href="https://hacks.mozilla.org/2019/02/firefox-66-to-block-automatically-playing-audible-video-and-audio/">Firefox</a></p>
-<p>There’s an <a target="_blank" rel="noopener" href="http://localhost:9000/examples/test/video/">A-Frame example that includes the necessary logic</a> to request the user clicking or tapping to start video playback. <a target="_blank" rel="noopener" href="https://github.com/mayognaise/aframe-html-shader/">The source code is also available</a></p>
+<p>There’s an <a href="https://aframe.io/aframe/examples/test/video/">A-Frame example that includes the necessary logic</a> to request the user clicking or tapping to start video playback. <a target="_blank" rel="noopener" href="https://github.com/mayognaise/aframe-html-shader/">The source code is also available</a></p>
 <p>We do not focus too much on video, but below are GitHub issues that may contain helpful information from community:</p>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://github.com/aframevr/aframe/issues/316"><em>Videos and videospheres don’t work on mobile</em></a></li>
@@ -1184,8 +1192,8 @@ like the lack of animation and vertex color support.</p>
 </ul>
 <p>Below are a couple basic examples for using models:</p>
 <ul>
-<li><a target="_blank" rel="noopener" href="http://localhost:9000/examples/test/model/">Model Example 1</a></li>
-<li><a target="_blank" rel="noopener" href="http://localhost:9000/examples/primitives/models/">Model Example 2</a></li>
+<li><a href="https://aframe.io/aframe/examples/test/model/">Model Example 1</a></li>
+<li><a href="https://aframe.io/aframe/examples/primitives/models/">Model Example 2</a></li>
 </ul>
 <h2 id="where-can-i-find-assets"><a href="#where-can-i-find-assets" class="headerlink" title="Where can I find assets?"></a>Where can I find assets?</h2><p>In general, <a target="_blank" rel="noopener" href="https://github.com/neutraltone/awesome-stock-resources">awesome-stock-resources</a> is a great collection of
 free assets.</p>
@@ -1266,7 +1274,7 @@ and pull requests:</p>
 <h2 id="where-is-the-roadmap"><a href="#where-is-the-roadmap" class="headerlink" title="Where is the roadmap?"></a>Where is the roadmap?</h2><p>The <a target="_blank" rel="noopener" href="https://github.com/aframevr/aframe/blob/master/ROADMAP.md">roadmap is on GitHub</a>!</p>
 <h2 id="do-i-call-it-“a-frame”-or-“aframe”-or-“aframevr”-or-“aframe”"><a href="#do-i-call-it-“a-frame”-or-“aframe”-or-“aframevr”-or-“aframe”" class="headerlink" title="Do I call it “A-Frame” or “aframe” or “aframevr” or “aFrame”?"></a>Do I call it “A-Frame” or “aframe” or “aframevr” or “aFrame”?</h2><p>A-Frame!</p>
 <h2 id="why-do-my-textures-render-black"><a href="#why-do-my-textures-render-black" class="headerlink" title="Why do my textures render black?"></a>Why do my textures render black?</h2><p>Phones with Adreno 300 series GPUs are notoriously problematic. Set <a href="../components/renderer.md#precision">renderer precision</a> to <code>medium</code> as a workaround. Real fix has to happen at the driver / device level.</p>
-<h2 id="why-is-the-gyroscope-magic-window-mode-not-working"><a href="#why-is-the-gyroscope-magic-window-mode-not-working" class="headerlink" title="Why is the gyroscope / magic window mode not working?"></a>Why is the gyroscope / magic window mode not working?</h2><p><a target="_blank" rel="noopener" href="https://www.w3.org/TR/orientation-event/#dom-deviceorientationevent-requestpermission">New browser policies</a> require sites to prompt the user for permission before getting access to DeviceMotionEvents. <a target="_blank" rel="noopener" href="https://webkit.org/blog/9674/new-webkit-features-in-safari-13/">Starting with iOS 13</a> DeviceMotionEvents are only available for pages served over <code>https</code>. Other browsers will also apply same policies and restrictions. A-Frame now <a target="_blank" rel="noopener" href="https://aframe.io/docs/1.0.0/components/device-orientation-permission-ui.html#sidebar">incorporates customizable UI</a> to request the necessary permissions to the user. Make sure to update to <a target="_blank" rel="noopener" href="https://github.com/aframevr/aframe/releases">A-Frame latest version</a></p>
+<h2 id="why-is-the-gyroscope-magic-window-mode-not-working"><a href="#why-is-the-gyroscope-magic-window-mode-not-working" class="headerlink" title="Why is the gyroscope / magic window mode not working?"></a>Why is the gyroscope / magic window mode not working?</h2><p><a target="_blank" rel="noopener" href="https://www.w3.org/TR/orientation-event/#dom-deviceorientationevent-requestpermission">New browser policies</a> require sites to prompt the user for permission before getting access to DeviceMotionEvents. <a target="_blank" rel="noopener" href="https://webkit.org/blog/9674/new-webkit-features-in-safari-13/">Starting with iOS 13</a> DeviceMotionEvents are only available for pages served over <code>https</code>. Other browsers will also apply same policies and restrictions. A-Frame now <a href="https://aframe.io/docs/1.0.0/components/device-orientation-permission-ui.html#sidebar">incorporates customizable UI</a> to request the necessary permissions to the user. Make sure to update to <a target="_blank" rel="noopener" href="https://github.com/aframevr/aframe/releases">A-Frame latest version</a></p>
 <h2 id="can-i-use-a-frame-offline-or-self-hosted"><a href="#can-i-use-a-frame-offline-or-self-hosted" class="headerlink" title="Can I use A-Frame offline or self hosted?"></a>Can I use A-Frame offline or self hosted?</h2><p>Using A-Frame online sometimes is not possible or inconvenient, like for instance when traveling or during public events with poor Internet connectivity. A-Frame is mostly self-contained so including the build (aframe.min.js) in your project will be sufficient in many cases. Some specific parts are lazy loaded and only fetched when used. This is for example the case of the fonts for the text component and the 3D models for controllers. In order to make an A-Frame build work either offline or without relying on A-Frame hosting infrastructure (typically cdn.aframe.io), you can monitor network requests on your browser console. This will show precisely what assets are being loaded and thus as required for your specific experience. Fonts can be found via FONT_BASE_URL in the whereas controllers via MODEL_URLS. Both can be modified in the source and included in your own <a target="_blank" rel="noopener" href="https://github.com/aframevr/aframe#generating-builds">custom build</a></p>
 
 

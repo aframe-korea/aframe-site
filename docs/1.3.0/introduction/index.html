@@ -18,11 +18,11 @@
       data-is-mobile="false"
       data-supports-vr="false"
       data-supports-touch="false"
-      data-site-base-url="http://localhost:4000"
+      data-site-base-url="https://aframe.io"
       data-site-root-path="/"
-      data-site-home-url="http://localhost:4000/"
-      data-lib-home-url="http://localhost:9000"
-      data-lib-examples-url="http://localhost:9000/examples"
+      data-site-home-url="https://aframe.io/"
+      data-lib-home-url="https://aframe.io/"
+      data-lib-examples-url="https://aframe.io/aframe/examples"
       data-title="{title} | A-Frame"
       data-is-spa="false"
       data-ga-id="UA-111391431-24"
@@ -32,11 +32,19 @@
     <title>Introduction – A-Frame</title>
     
 
+<script>
+  var host = window.location.protocol + '//' + window.location.hostname;
+  if (window.location.protocol === 'http:' &&
+      window.location.hostname === 'https://aframe.io') {
+    window.location.href = 'https:' + window.location.href.substring(6);
+  }
+</script>
+
 
     <meta charset="utf-8">
     <!-- Don't index old documentation pages. -->
     <meta name="robots"
-      content="none">
+      content="all">
     <meta name="description" content="">
     <meta name="keywords" content="webvr,webvr framework,webvr demos,webvr sites,vr javascript,vr framework">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -44,29 +52,29 @@
     <meta http-equiv="origin-trial" data-feature=" WebXR Device API (For Chrome M69+)" data-expires="2019-03-05" content="Ako5ueZ8LIub4MywyaWBtX6FQOVZBYPxDUBC09XfJRjVfQH1GXOaRO8v4/TQWyPdmw2qm8nJ/f9QfFwE+t20NwsAAABkeyJvcmlnaW4iOiJodHRwczovL2FmcmFtZS5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViWFJEZXZpY2VNNjkiLCJleHBpcnkiOjE1NTE4MzAzOTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
     <!-- Origin Trial Token, feature = WebVR (For Chrome M62+), origin = https://aframe.io, expires = 2018-08-09 -->
     <meta http-equiv="origin-trial" data-feature="WebVR (For Chrome M62+)" data-expires="2018-08-09" content="AlKeBeX7MGtuPmoZUks7FEWi6ke/EeYDPS1zhkb9bsdGr+r9gv+vYXGN7pUIz8+4XPxpWi7guenedSC1jM8B6AcAAABOeyJvcmlnaW4iOiJodHRwczovL2FmcmFtZS5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViVlIxLjFNNjIiLCJleHBpcnkiOjE1MzM4NDAyMzN9">
-    <link rel="canonical" href="http://localhost:4000">
+    <link rel="canonical" href="https://aframe.io">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600" rel="stylesheet">
     <meta property="fb:app_id" content="1535794316743373">
     <meta property="og:title" content="Introduction – A-Frame">
     <meta property="og:site_name" content="A-Frame">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://localhost:4000">
+    <meta property="og:url" content="https://aframe.io">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:4000/images/card.jpg?v2">
-    <meta property="og:image:secure_url" content="http://localhost:4000/images/card.jpg?v2">
+    <meta property="og:image" content="http://aframe.io/images/card.jpg?v2">
+    <meta property="og:image:secure_url" content="https://aframe.io/images/card.jpg?v2">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@aframevr">
     <meta name="twitter:creator" content="@aframevr">
     <meta name="twitter:title" content="Introduction – A-Frame">
     <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="http://localhost:4000/images/card.jpg?v2">
+    <meta name="twitter:image" content="http://aframe.io/images/card.jpg?v2">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="black">
-    <link rel="icon" sizes="192x192" href="http://localhost:4000/images/aframe-logo-192.png">
+    <link rel="icon" sizes="192x192" href="https://aframe.io/images/aframe-logo-192.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon" href="http://localhost:4000/images/aframe-logo-152.png">
-    <link rel="alternate" type="application/rss+xml" title="Feed" href="http://localhost:4000/feed.xml">
+    <link rel="apple-touch-icon" href="https://aframe.io/images/aframe-logo-152.png">
+    <link rel="alternate" type="application/rss+xml" title="Feed" href="https://aframe.io/feed.xml">
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -188,9 +196,9 @@
       </li>
     
       <li  data-slug="slug" class="nav-item">
-        <a target="_blank" href="https://aframe.io/slack-invite/"
+        <a href="https://aframe.io/slack-invite/"
            class="nav-link nav-link-docs"
-            rel="external noopener"
+            rel="external"
             title="Sign up to the A-Frame Slack">
           <span>Slack</span>
         </a>
@@ -206,9 +214,9 @@
       </li>
     
       <li  class="nav-item">
-        <a target="_blank" href="https://aframe.io/subscribe/"
+        <a href="https://aframe.io/subscribe/"
            class="nav-link nav-link-docs"
-            rel="external noopener"
+            rel="external"
            >
           <span>Newsletter</span>
         </a>
@@ -1088,7 +1096,7 @@ free. Alternatively, create an <code>.html</code> file and include A-Frame in th
 <code>&lt;head&gt;</code>:</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://aframe.io/releases/1.3.0/aframe.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a-scene</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">a-box</span> <span class="attr">position</span>=<span class="string">&quot;-1 0.5 -3&quot;</span> <span class="attr">rotation</span>=<span class="string">&quot;0 45 0&quot;</span> <span class="attr">color</span>=<span class="string">&quot;#4CC3D9&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a-box</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">a-sphere</span> <span class="attr">position</span>=<span class="string">&quot;0 1.25 -5&quot;</span> <span class="attr">radius</span>=<span class="string">&quot;1.25&quot;</span> <span class="attr">color</span>=<span class="string">&quot;#EF2D5E&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a-sphere</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">a-cylinder</span> <span class="attr">position</span>=<span class="string">&quot;1 0.75 -3&quot;</span> <span class="attr">radius</span>=<span class="string">&quot;0.5&quot;</span> <span class="attr">height</span>=<span class="string">&quot;1.5&quot;</span> <span class="attr">color</span>=<span class="string">&quot;#FFC65D&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a-cylinder</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">a-plane</span> <span class="attr">position</span>=<span class="string">&quot;0 0 -4&quot;</span> <span class="attr">rotation</span>=<span class="string">&quot;-90 0 0&quot;</span> <span class="attr">width</span>=<span class="string">&quot;4&quot;</span> <span class="attr">height</span>=<span class="string">&quot;4&quot;</span> <span class="attr">color</span>=<span class="string">&quot;#7BC8A4&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a-plane</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">a-sky</span> <span class="attr">color</span>=<span class="string">&quot;#ECECEC&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a-sky</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">a-scene</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>The <a href="./installation.md">Installation</a> page provides more options for getting started with A-Frame.
-To get started learning A-Frame, check out <a target="_blank" rel="noopener" href="https://aframe.io/school/">A-Frame School</a> for visual
+To get started learning A-Frame, check out <a href="https://aframe.io/school/">A-Frame School</a> for visual
 step-by-step lessons to complement the documentation.</p>
 <h2 id="what-is-a-frame"><a href="#what-is-a-frame" class="headerlink" title="What is A-Frame?"></a>What is A-Frame?</h2><p><img src="https://cloud.githubusercontent.com/assets/674727/25392020/6f011d10-298c-11e7-845e-c3c5baebd14d.jpg" alt="A-Frame"></p>
 <p><img class="github-emoji"  title="a" alt="a" src="https://github.githubassets.com/images/icons/emoji/unicode/1f170.png?v8" height="20" width="20" />-Frame is a web framework for building virtual reality (VR) experiences.
@@ -1099,7 +1107,7 @@ composable structure to <a target="_blank" rel="noopener" href="https://threejs.
 <p>Originally conceived within Mozilla and now maintained by the co-creators of
 A-Frame within <a target="_blank" rel="noopener" href="https://supermedium.com">Supermedium</a>, A-Frame was developed to
 be an easy yet powerful way to develop VR content. As an <a target="_blank" rel="noopener" href="https://github.com/aframevr/">independent open
-source project</a>, A-Frame has grown to be one of the <a target="_blank" rel="noopener" href="https://aframe.io/community/">largest VR
+source project</a>, A-Frame has grown to be one of the <a href="https://aframe.io/community/">largest VR
 communities</a>.</p>
 <p>A-Frame supports most VR headsets such as Vive, Rift, Windows Mixed Reality,
 Daydream, GearVR, Cardboard, Oculus Go, and can even be used for augmented
@@ -1110,16 +1118,16 @@ content, making full use of positional tracking and controllers.</p>
   <a target="_blank" rel="noopener" href="https://supermedium.com/supercraft">
     <img alt="Supercraft" target="_blank" src="https://user-images.githubusercontent.com/674727/41085457-f5429566-69eb-11e8-92e5-3210e4c6c4a0.gif" height="190" width="32%">
   </a>
-  <a target="_blank" rel="noopener" href="https://aframe.io/a-painter/?url=https://ucarecdn.com/962b242b-87a9-422c-b730-febdc470f203/">
+  <a href="https://aframe.io/a-painter/?url=https://ucarecdn.com/962b242b-87a9-422c-b730-febdc470f203/">
     <img alt="A-Painter" target="_blank" src="https://cloud.githubusercontent.com/assets/674727/24531388/acfc3dda-156d-11e7-8563-5bd75252f70f.gif" height="190" width="32%">
   </a>
   <a target="_blank" rel="noopener" href="https://supermedium.com">
     <img alt="Supermedium" target="_blank" src="https://user-images.githubusercontent.com/674727/37294616-7212cd20-25d3-11e8-9e7f-c0c61074f1e0.png" height="190" width="32%">
   </a>
-  <a target="_blank" rel="noopener" href="https://aframe.io/a-blast/">
+  <a href="https://aframe.io/a-blast/">
     <img alt="A-Blast" target="_blank" src="https://cloud.githubusercontent.com/assets/674727/24531440/0336e66e-156e-11e7-95c2-f2e6ebc0393d.gif" height="190" width="32%">
   </a>
-  <a target="_blank" rel="noopener" href="https://aframe.io/a-saturday-night/">
+  <a href="https://aframe.io/a-saturday-night/">
     <img alt="A-Saturday-Night" target="_blank" src="https://cloud.githubusercontent.com/assets/674727/24531477/44272daa-156e-11e7-8ef9-d750ed430f3a.gif" height="190" width="32%">
   </a>
   <a target="_blank" rel="noopener" href="https://github.com/googlecreativelab/webvr-musicalforest">
@@ -1164,7 +1172,7 @@ as Google, Microsoft, Oculus, and Samsung have made contributions to A-Frame.</p
 <h2 id="off-you-go"><a href="#off-you-go" class="headerlink" title="Off You Go!"></a>Off You Go!</h2><p>If it’s your first time here, here’s a plan for success for getting into
 A-Frame:</p>
 <ol>
-<li><p><a target="_blank" rel="noopener" href="https://aframe.io/subscribe/">Subscribe to the Newsletter</a> for updates and
+<li><p><a href="https://aframe.io/subscribe/">Subscribe to the Newsletter</a> for updates and
 tips on A-Frame and to see featured community projects.</p>
 </li>
 <li><p>Read through the documentation to get a grasp.
@@ -1176,8 +1184,8 @@ questions, <a target="_blank" rel="noopener" href="http://stackoverflow.com/ques
 and someone will try to get to you!</p>
 </li>
 <li><p>When you build something, share your project online and we’ll try to feature
-it on the <a target="_blank" rel="noopener" href="https://aframe.io/subscribe/">newsletter</a> and the
-<a target="_blank" rel="noopener" href="https://aframe.io/blog/">blog</a>!</p>
+it on the <a href="https://aframe.io/subscribe/">newsletter</a> and the
+<a href="https://aframe.io/blog/">blog</a>!</p>
 </li>
 </ol>
 <p>And it really helps to have a dig into the fundamentals on JavaScript and
