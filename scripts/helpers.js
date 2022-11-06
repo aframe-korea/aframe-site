@@ -118,11 +118,11 @@ hexo.extend.helper.register('markdown', function (text) {
 });
 
 hexo.extend.helper.register('blog_date', function (date) {
-  return moment(date).format('MMM D[,] YYYY');
+  return moment(date).format('YYYY년 MM월 DD일');
 });
 
 hexo.extend.helper.register('blog_date_subtract_week', function (date) {
-  return moment(date).subtract({weeks: 1}).format('MMM D[,] YYYY');
+  return moment(date).subtract({weeks: 1}).format('YYYY년 MM월 DD일');
 });
 
 /**

@@ -5,10 +5,10 @@ layout: index
 ---
 
 <h1 class="slogan">
-  A web framework for building 3D/AR/VR experiences
+  3D/AR/VR을 구축하기 위한 웹 프레임워크
 </h1>
 
 <div class="intro">
-  <p>Make 3D worlds with HTML and Entity-Component</p>
-  <p>For Quest, Rift, WMR, SteamVR, mobile, desktop</p>
+  <p>HTML과 Entity-Component를 이용해 3D 세상을 만들어보세요</p>
+  <p>Quest, Rift, WMR, SteamVR, 모바일, 데스크탑을 지원합니다</p>
 </div>

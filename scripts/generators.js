@@ -83,7 +83,7 @@ hexo.extend.generator.register('blog', function (locals) {
       route.data.next = {
         pageNum: page + 1,
         path: '/blog/' + (page + 1) + '/',
-        title: 'Next Page'
+        title: '다음 페이지'
       };
     }
 
@@ -92,7 +92,7 @@ hexo.extend.generator.register('blog', function (locals) {
       route.data.prev = {
         pageNum: page - 1,
         path: page - 1 === 1 ? 'blog/' : '/blog/' + (page - 1) + '/',
-        title: 'Previous Page'
+        title: '이전 페이지'
       };
     }
 

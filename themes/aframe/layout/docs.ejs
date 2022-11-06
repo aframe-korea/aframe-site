@@ -66,9 +66,9 @@
 
       <% var currentDocs = docs_root_path(site.pages, config.aframe_version) %>
       <% if (activeVersion === 'master') { %>
-        <%- markdown("> **NOTE:** This version of the documentation tracks **unstable** development happening on [A-Frame's `master` branch](https://github.com/aframevr/aframe/tree/master/dist). If you wish to try it out, grab the [unstable build](https://github.com/aframevr/aframe/tree/master/dist#a-frame-builds). Otherwise, head to the [documentation for the current " + config.aframe_version + " version](" + currentDocs + ")") %>
+        <%- markdown("> **주의:** 이 버전의 문서는 [A-Frame의 `master` 브랜치](https://github.com/aframevr/aframe/tree/master/dist) 에서 발생하는 **불안정한** 개발 버전입니다. 사용해 보려면, [unstable build](https://github.com/aframevr/aframe/tree/master/dist#a-frame-builds) 을 참고하세요. 그렇지 않으면, [" + config.aframe_version + " version](" + currentDocs + ") 문서를 보시길 바랍니다.") %>
       <% } else if (activeVersion !== config.aframe_version) { %>
-        <%- markdown("> **Note:** This documentation is for the old " + activeVersion + " version of A-Frame. Check out the [documentation for the current " + config.aframe_version + " version](" + currentDocs + ")") %>
+        <%- markdown("> **주의:** This documentation is for the old " + activeVersion + " version of A-Frame. Check out the [documentation for the current " + config.aframe_version + " version](" + currentDocs + ")") %>
       <% } %>
 
       <%- page.content %>

@@ -1,14 +1,14 @@
 <%
 var links = [
-  {url: docs_root_path(site.pages, config.aframe_version), text: 'Docs'},
-  {url: 'blog/', text: 'Blog'},
-  {url: 'community/', text: 'Community'},
-  {url: 'showcase/', text: 'Showcase'},
-  {url: config.github.aframe.url, text: 'GitHub', slug: 'github', title: 'A-Frame Project Repository'},
-  {url: config.slack.aframe.signup_url, text: 'Slack', slug: 'slug', title: 'Sign up to the A-Frame Slack'},
-  {url: 'https://supermedium.com/discord/', text: 'Discord', slug: 'slug', title: 'A-Frame Discord Channel'},
-  {url: 'https://aframe.io/subscribe/', text: 'Newsletter'},
-  {url: 'https://stackoverflow.com/questions/ask/?tags=aframe', text: 'Ask a Question'}
+  {url: docs_root_path(site.pages, config.aframe_version), text: '문서'},
+  {url: 'blog/', text: '블로그'},
+  {url: 'community/', text: '커뮤니티'},
+  {url: 'showcase/', text: '쇼케이스'},
+  {url: config.github.aframe.url, text: 'GitHub', slug: 'github', title: 'A-Frame 프로젝트 레포지토리'},
+  {url: config.slack.aframe.signup_url, text: 'Slack', slug: 'slug', title: 'A-Frame Slack 에 가입하기'},
+  {url: 'https://supermedium.com/discord/', text: 'Discord', slug: 'slug', title: 'A-Frame 디스코드 채널'},
+  {url: 'https://aframe.io/subscribe/', text: '뉴스레터'},
+  {url: 'https://stackoverflow.com/questions/ask/?tags=aframe', text: '질문하기'}
 ];
 links = links.map(function (link) {
   if (is_external_url(link.url)) {

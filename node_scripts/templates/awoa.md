@@ -1,5 +1,5 @@
 ---
-title: "A Week of A-Frame ${weekNumber}"
+title: "A-Frame ${weekNumber}째 주 소식"
 from: ${fromDate}
 date: ${toDate}
 layout: blog
