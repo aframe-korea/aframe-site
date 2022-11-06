@@ -5,9 +5,9 @@
 # Site.
 title: A-Frame
 subtitle: Make WebVR
-description: "A web framework for building virtual reality experiences. Make WebVR with HTML and Entity-Component. Works on Vive, Rift, desktop, mobile platforms."
+description: "가상 현실을 구축하기 위한 웹 프레임워크. HTML과 Entity-Component로 WebVR을 만들어 보세요. Vive, Rift, 데스크탑, 모바일 플랫폼 등에서 작동합니다."
 email:
-language:
+language: ko
 robots: all
 blog_title: Blog
 
