@@ -1119,8 +1119,8 @@ It also configures presentation attributes when entering WebVR/WebXR.</p>
 </tr>
 <tr>
 <td>foveationLevel</td>
-<td>Enables foveation in VR to improve perf. 0 none, 1 low, 2 medium, 3 high</td>
-<td>0</td>
+<td>Amount of foveation used in VR to improve perf, from 0 (min) to 1 (max).</td>
+<td>1</td>
 </tr>
 <tr>
 <td>sortObjects</td>
@@ -1157,10 +1157,20 @@ It also configures presentation attributes when entering WebVR/WebXR.</p>
 <td>Whether the canvas should contain an alpha buffer.</td>
 <td>true</td>
 </tr>
+<tr>
+<td>toneMapping</td>
+<td>Type of toneMapping to use, one of: ‘no’, ‘ACESFilmic’, ‘linear’, ‘reinhard’, ‘cineon’</td>
+<td>‘no’</td>
+</tr>
+<tr>
+<td>exposure</td>
+<td>When any toneMapping other than “no” is used this can be used to make the overall scene brighter or darker</td>
+<td>1</td>
+</tr>
 </tbody>
 </table>
 <blockquote>
-<p><strong>NOTE:</strong> Once the scene is initialized, these properties may no longer be changed.</p>
+<p><strong>NOTE:</strong> Once the scene is initialized, none of these properties may no longer be changed apart from “exposure” and “toneMapping” which can be set dynamically.</p>
 </blockquote>
 <h3 id="antialias"><a href="#antialias" class="headerlink" title="antialias"></a>antialias</h3><p>When enabled, smooths jagged edges on curved lines and diagonals at moderate performance cost.
 By default, antialiasing is disabled on mobile devices.</p>
@@ -1176,9 +1186,9 @@ available. This is applied automatically when color management is enabled.</p>
 </blockquote>
 <h3 id="highrefreshrate"><a href="#highrefreshrate" class="headerlink" title="highRefreshRate"></a>highRefreshRate</h3><p>Toggles on the highest refresh rate for the given device. Currently this is supported on the Oculus
 Browser in Oculus Go and switches rendering from 60hz to 72hz.</p>
-<h3 id="foveationlevel"><a href="#foveationlevel" class="headerlink" title="foveationLevel"></a>foveationLevel</h3><p>Sets the level of requested foveation which renders fewer pixels around the edges of the viewport
-when in stereo rendering mode on certain systems. This is currently supported by the Oculus Browser
-on the Oculus Go with values ranging from 0 (none) to 3 (high). </p>
+<h3 id="foveationlevel"><a href="#foveationlevel" class="headerlink" title="foveationLevel"></a>foveationLevel</h3><p>Controls the amount of foveation which renders fewer pixels near the edges of the user’s field of view
+when in stereo rendering mode on certain systems. The value should be in the range of 0 to 1, where
+0 is the minimum and 1 the maximum amount of foveation. This is currently supported by the Oculus Browser.</p>
 <h3 id="sortobjects"><a href="#sortobjects" class="headerlink" title="sortObjects"></a>sortObjects</h3><p>Sorting is used to attempt to properly render objects that have some degree of transparency.
 Due to various limitations, proper transparency often requires some amount of careful setup.
 By default, objects are not sorted, and the order of elements in the DOM determines order of
